@@ -48,13 +48,22 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       mainBg: string;
-      lightBg: string;
-      white: string;
-      black: string;
-      lightGray: string;
+
+      text: string;
+      textLight: string;
+
+      textGray: string;
+      textGrayLight: string;
+      textGrayLighter: string;
+
       gray: string;
-      darkGray: string;
-      red: string;
+      grayDark: string;
+      grayDarker: string;
+      grayDarkest: string;
+
+      textBg: string;
+
+      danger: string;
     };
   }
 }

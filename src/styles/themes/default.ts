@@ -1,3 +1,5 @@
+import { rgba } from 'polished';
+
 export default {
   grid: {
     container: '130rem',
@@ -43,15 +45,24 @@ export default {
     xxlarge: '5.6rem',
   },
   colors: {
-    primary: '#F231A5',
-    secondary: '#3CD3C1',
-    mainBg: '#111111',
-    lightBg: '#F2F2F2',
-    white: '#FAFAFA',
-    black: '#030517',
-    lightGray: '#EAEAEA',
+    primary: '#BA75FF',
+    secondary: '#201F2B',
+    mainBg: '#111116',
+
+    text: rgba('#FFF', 0.87),
+    textLight: rgba('#FFF', 0.6),
+
+    textGray: rgba('#B6B6B6', 0.87),
+    textGrayLight: rgba('#CCCCCC', 0.87),
+    textGrayLighter: rgba('#CCCCCC', 0.6),
+
     gray: '#8F8F8F',
-    darkGray: '#2E2F42',
-    red: '#FF6347',
+    grayDark: '#44434B',
+    grayDarker: '#25242C',
+    grayDarkest: '#19181F',
+
+    textBg: rgba('#3D4853', 0.6),
+
+    danger: '#FF6347',
   },
 };
