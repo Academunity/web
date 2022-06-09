@@ -5,8 +5,6 @@ import theme from 'styles/themes/default';
 
 const OriginalNextImage = NextImage.default;
 
-/* eslint no-import-assign: "off" */
-/* eslint react/jsx-filename-extension: "off" */
 Object.defineProperty(NextImage, 'default', {
   configurable: true,
   value: (props) => <OriginalNextImage {...props} unoptimized />,
@@ -17,12 +15,8 @@ export const parameters = {
     default: 'dark',
     values: [
       {
-        name: 'light',
-        value: theme.colors.mainBg,
-      },
-      {
         name: 'dark',
-        value: theme.colors.lightBg,
+        value: theme.colors.mainBg,
       },
     ],
   },
