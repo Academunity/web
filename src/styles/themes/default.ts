@@ -6,7 +6,10 @@ export default {
     gutter: '3.2rem',
   },
   border: {
-    radius: '0.4rem',
+    radius: {
+      small: '0.4rem',
+      medium: '0.8rem',
+    },
   },
   layers: {
     base: 10,
@@ -48,7 +51,7 @@ export default {
   },
   colors: {
     primary: '#BA75FF',
-    secondary: '#201F2B',
+    secondary: '#363449',
     mainBg: '#111116',
 
     text: rgba('#FFF', 0.87),

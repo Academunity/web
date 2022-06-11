@@ -7,7 +7,10 @@ declare module 'styled-components' {
       gutter: string;
     };
     border: {
-      radius: string;
+      radius: {
+        small: string;
+        medium: string;
+      };
     };
     layers: {
       base: number;

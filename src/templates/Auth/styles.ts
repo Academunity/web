@@ -40,6 +40,10 @@ export const Infos = styled.div`
 
 export const Content = styled.main`
   flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
@@ -67,5 +71,19 @@ export const SocialLogos = styled.div`
     justify-content: flex-start;
     gap: ${theme.spacings.xsmall};
     margin-bottom: ${theme.spacings.small};
+  `}
+`;
+
+export const Form = styled.form`
+  ${({ theme }) => css`
+    padding: ${theme.spacings.medium};
+  `}
+`;
+
+export const FormTitle = styled.h2`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.xxlarge};
+    font-weight: ${theme.font.bold};
+    color: ${theme.colors.text};
   `}
 `;

@@ -1,3 +1,4 @@
+import { Card } from 'components/Card';
 import Link from 'next/link';
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from 'react-icons/io';
 import { useTheme } from 'styled-components';
@@ -12,7 +13,7 @@ export function Auth({ title, children }: AuthProps) {
   const theme = useTheme();
 
   return (
-    <S.Container title={title}>
+    <S.Container>
       <S.Brand>
         <S.Infos>
           <S.Title>Academunity</S.Title>
@@ -43,7 +44,14 @@ export function Auth({ title, children }: AuthProps) {
         </S.SocialLogos>
       </S.Brand>
 
-      <S.Content>{children}</S.Content>
+      <S.Content>
+        <Card>
+          <S.Form>
+            <S.FormTitle>{title}</S.FormTitle>
+            {children}
+          </S.Form>
+        </Card>
+      </S.Content>
     </S.Container>
   );
 }
