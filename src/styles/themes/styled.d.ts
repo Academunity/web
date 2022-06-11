@@ -32,7 +32,9 @@ declare module 'styled-components' {
         large: string;
         xlarge: string;
         xxlarge: string;
+        xxxlarge: string;
         huge: string;
+        xhuge: string;
       };
     };
     spacings: {
@@ -64,6 +66,9 @@ declare module 'styled-components' {
       textBg: string;
 
       danger: string;
+
+      white: string;
+      black: string;
     };
   }
 }

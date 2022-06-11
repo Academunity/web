@@ -32,17 +32,19 @@ export default {
       large: '1.8rem',
       xlarge: '2.0rem',
       xxlarge: '2.8rem',
+      xxxlarge: '3.2rem',
       huge: '5.2rem',
+      xhuge: '7.2rem',
     },
   },
   spacings: {
     xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
+    xsmall: '1.5rem',
+    small: '2.5rem',
     medium: '3.2rem',
     large: '4.0rem',
-    xlarge: '4.8rem',
-    xxlarge: '5.6rem',
+    xlarge: '4.5rem',
+    xxlarge: '6.0rem',
   },
   colors: {
     primary: '#BA75FF',
@@ -64,5 +66,8 @@ export default {
     textBg: rgba('#3D4853', 0.6),
 
     danger: '#FF6347',
+
+    white: '#FFF',
+    black: '#000',
   },
 };

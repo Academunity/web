@@ -1,5 +1,5 @@
-import { Main } from 'components/Main';
+import { Auth } from 'templates/Auth';
 
 export default function Home() {
-  return <Main />;
+  return <Auth title="Teste">teste</Auth>;
 }

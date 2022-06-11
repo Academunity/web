@@ -5,7 +5,7 @@ import GlobalStyles from 'styles/global';
 import NextNProgress from 'nextjs-progressbar';
 import light from 'styles/themes/light';
 import dark from 'styles/themes/dark';
-import { useDarkMode } from 'hooks/shared/useDarkMode';
+import { useDarkMode } from 'usehooks-ts';
 
 function App({ Component, pageProps }: AppProps) {
   const { isDarkMode } = useDarkMode();
@@ -13,7 +13,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={isDarkMode ? dark : light}>
       <Head>
-        <title>Welcome | Next Boilerplate</title>
+        <title>Welcome | Academunity</title>
         <link rel="icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-192.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -24,7 +24,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <NextNProgress
-        color="#F231A5"
+        color="#BA75FF"
         startPosition={0.3}
         stopDelayMs={200}
         height={5}
