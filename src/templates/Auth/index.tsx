@@ -25,19 +25,19 @@ export function Auth({ title, children }: AuthProps) {
 
         <S.SocialLogos>
           <Link href="https://facebook.com" passHref>
-            <a target="_blank">
+            <a target="_blank" aria-label="Facebook">
               <IoLogoFacebook color={theme.colors.white} size={32} />
             </a>
           </Link>
 
           <Link href="https://twitter.com" passHref>
-            <a target="_blank">
+            <a target="_blank" aria-label="Twitter">
               <IoLogoTwitter color={theme.colors.white} size={32} />
             </a>
           </Link>
 
           <Link href="https://instagram.com" passHref>
-            <a target="_blank">
+            <a target="_blank" aria-label="Instagram">
               <IoLogoInstagram color={theme.colors.white} size={32} />
             </a>
           </Link>
