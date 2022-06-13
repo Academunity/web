@@ -1,5 +1,14 @@
-import { Auth } from 'templates/Auth';
+import { GetServerSideProps } from 'next';
 
 export default function Home() {
-  return <Auth title="Entrar">teste</Auth>;
+  return null;
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    redirect: {
+      destination: '/sign-in',
+      statusCode: 303,
+    },
+  };
+};
