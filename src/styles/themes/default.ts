@@ -6,6 +6,10 @@ export default {
     gutter: '3.2rem',
   },
   border: {
+    widths: {
+      thinner: '1px',
+      thin: '2px',
+    },
     radius: {
       small: '0.4rem',
       medium: '0.8rem',
@@ -19,7 +23,7 @@ export default {
     alwaysOnTop: 50,
   },
   transition: {
-    default: '0.3s ease-in-out',
+    default: '0.2s ease-in-out',
     fast: '0.1s ease-in-out',
   },
   font: {

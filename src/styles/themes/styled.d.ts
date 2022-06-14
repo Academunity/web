@@ -7,6 +7,9 @@ declare module 'styled-components' {
       gutter: string;
     };
     border: {
+      widths: {
+        thin: string;
+      };
       radius: {
         small: string;
         medium: string;
