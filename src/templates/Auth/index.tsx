@@ -1,6 +1,6 @@
 import { Card } from 'components/Card';
 import Link from 'next/link';
-import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from 'react-icons/io';
+import { Facebook, Twitter, Instagram } from 'styled-icons/boxicons-logos';
 import { useTheme } from 'styled-components';
 import * as S from './styles';
 
@@ -26,19 +26,19 @@ export function Auth({ title, children }: AuthProps) {
         <S.SocialLogos>
           <Link href="https://facebook.com" passHref>
             <a target="_blank" aria-label="Facebook">
-              <IoLogoFacebook color={theme.colors.white} size={32} />
+              <Facebook color={theme.colors.white} size={32} />
             </a>
           </Link>
 
           <Link href="https://twitter.com" passHref>
             <a target="_blank" aria-label="Twitter">
-              <IoLogoTwitter color={theme.colors.white} size={32} />
+              <Twitter color={theme.colors.white} size={32} />
             </a>
           </Link>
 
           <Link href="https://instagram.com" passHref>
             <a target="_blank" aria-label="Instagram">
-              <IoLogoInstagram color={theme.colors.white} size={32} />
+              <Instagram color={theme.colors.white} size={32} />
             </a>
           </Link>
         </S.SocialLogos>

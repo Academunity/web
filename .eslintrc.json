@@ -68,6 +68,7 @@
       "components": ["Link"],
       "specialLink": ["hrefLeft", "hrefRight"],
       "aspects": ["invalidHref", "preferButton"]
-    }]
+    }],
+    "no-use-before-define": ["error", { "variables": false }]
   }
 }
