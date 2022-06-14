@@ -1,35 +1,38 @@
 import * as S from './styles';
 
-export type InputProps = {
+export type UncontrolledTextFieldProps = {
   iconPosition?: 'left' | 'right';
   icon?: React.ReactNode;
   label?: string;
+  error?: string;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
-export function Input({
+export function UncontrolledTextField({
   placeholder,
   label,
   name,
   icon,
+  error,
   disabled = false,
   iconPosition = 'left',
   ...props
-}: InputProps) {
+}: UncontrolledTextFieldProps) {
   return (
-    <S.Wrapper disabled={disabled} error={false}>
+    <S.Wrapper disabled={disabled} error={!!error}>
       {!!label && <S.Label htmlFor={name}>{label}</S.Label>}
 
       <S.ControlWrapper>
         {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
         <S.Control
           iconPosition={iconPosition}
+          disabled={disabled}
           placeholder={placeholder ?? 'Type...'}
           {...(label ? { id: name } : {})}
           {...props}
         />
       </S.ControlWrapper>
 
-      {/* {!!error && <S.Error>{error}</S.Error>} */}
+      {!!error && <S.Error>{error}</S.Error>}
     </S.Wrapper>
   );
 }

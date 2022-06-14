@@ -1,8 +1,10 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { InputProps } from '.';
+import { UncontrolledTextFieldProps } from '.';
 
-type WrapperProps = Pick<InputProps, 'disabled'> & { error: boolean };
-type IconPositionProps = Pick<InputProps, 'iconPosition'>;
+type WrapperProps = Pick<UncontrolledTextFieldProps, 'disabled'> & {
+  error: boolean;
+};
+type IconPositionProps = Pick<UncontrolledTextFieldProps, 'iconPosition'>;
 type ControlProps = IconPositionProps;
 
 const wrapperModifiers = {
