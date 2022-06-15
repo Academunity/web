@@ -77,6 +77,7 @@ export const Control = styled.input<ControlProps>`
 export const Label = styled.label`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
+    font-weight: ${theme.font.light};
     color: ${theme.colors.text};
     cursor: pointer;
   `}

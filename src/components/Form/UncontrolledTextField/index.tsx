@@ -1,3 +1,4 @@
+import { ControllerRenderProps, FieldValues } from 'react-hook-form';
 import * as S from './styles';
 
 export type UncontrolledTextFieldProps = {
@@ -5,6 +6,7 @@ export type UncontrolledTextFieldProps = {
   icon?: React.ReactNode;
   label?: string;
   error?: string;
+  field?: ControllerRenderProps<FieldValues, string>;
 } & React.InputHTMLAttributes<HTMLInputElement>;
 
 export function UncontrolledTextField({
@@ -13,6 +15,7 @@ export function UncontrolledTextField({
   name,
   icon,
   error,
+  field,
   disabled = false,
   iconPosition = 'left',
   ...props
@@ -29,6 +32,7 @@ export function UncontrolledTextField({
           placeholder={placeholder ?? 'Type...'}
           {...(label ? { id: name } : {})}
           {...props}
+          {...(field || {})}
         />
       </S.ControlWrapper>
 
