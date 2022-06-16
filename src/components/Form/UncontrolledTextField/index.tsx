@@ -31,8 +31,8 @@ export function UncontrolledTextField({
           disabled={disabled}
           placeholder={placeholder ?? 'Type...'}
           {...(label ? { id: name } : {})}
-          {...props}
           {...(field || {})}
+          {...props}
         />
       </S.ControlWrapper>
 
