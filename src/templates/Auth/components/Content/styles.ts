@@ -1,11 +1,16 @@
 import styled, { css } from 'styled-components';
+import { Card as GlobalCard } from 'components/Card';
 
-export const Content = styled.main`
+export const Container = styled.main`
   flex: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Card = styled(GlobalCard)`
+  width: 50rem;
 `;
 
 export const Form = styled.form`

@@ -7,7 +7,7 @@ export function Brand() {
   const theme = useTheme();
 
   return (
-    <S.Brand>
+    <S.Container>
       <S.Infos>
         <S.Title>Academunity</S.Title>
         <S.Description>
@@ -35,6 +35,6 @@ export function Brand() {
           </a>
         </Link>
       </S.SocialLogos>
-    </S.Brand>
+    </S.Container>
   );
 }

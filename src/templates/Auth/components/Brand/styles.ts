@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Brand = styled.section`
+export const Container = styled.section`
   ${({ theme }) => css`
     flex: 1;
 
