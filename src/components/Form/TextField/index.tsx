@@ -32,6 +32,7 @@ export function TextField({
       error={props.error || fieldState.error?.message}
       field={field}
       name={name}
+      value={field.value ?? ''}
       {...props}
     />
   );

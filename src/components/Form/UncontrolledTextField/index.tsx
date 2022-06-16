@@ -20,6 +20,11 @@ export function UncontrolledTextField({
   iconPosition = 'left',
   ...props
 }: UncontrolledTextFieldProps) {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    field?.onChange(e.target.value);
+    if (props.onChange) props.onChange(e);
+  };
+
   return (
     <S.Wrapper disabled={disabled} error={!!error}>
       {!!label && <S.Label htmlFor={name}>{label}</S.Label>}
@@ -33,6 +38,7 @@ export function UncontrolledTextField({
           {...(label ? { id: name } : {})}
           {...(field || {})}
           {...props}
+          onChange={handleChange}
         />
       </S.ControlWrapper>
 
