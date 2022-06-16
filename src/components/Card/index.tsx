@@ -1,9 +1,8 @@
-import * as S from './styles';
+import styled, { css } from 'styled-components';
 
-export type CardProps = {
-  children: React.ReactNode;
-};
-
-export function Card({ children }: CardProps) {
-  return <S.Wrapper>{children}</S.Wrapper>;
-}
+export const Card = styled.div`
+  ${({ theme }) => css`
+    background: ${theme.colors.secondary};
+    border-radius: ${theme.border.radius.small};
+  `}
+`;
