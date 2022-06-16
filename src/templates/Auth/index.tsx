@@ -2,6 +2,7 @@ import { Card } from 'components/Card';
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram } from 'styled-icons/boxicons-logos';
 import { useTheme } from 'styled-components';
+import { Stack } from 'components/Stack';
 import * as S from './styles';
 
 type AuthProps = {
@@ -47,8 +48,10 @@ export function Auth({ title, children }: AuthProps) {
       <S.Content>
         <Card>
           <S.Form>
-            <S.FormTitle>{title}</S.FormTitle>
-            {children}
+            <Stack spacing={theme.spacings.small}>
+              <S.FormTitle>{title}</S.FormTitle>
+              {children}
+            </Stack>
           </S.Form>
         </Card>
       </S.Content>

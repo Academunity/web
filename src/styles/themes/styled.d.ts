@@ -44,6 +44,7 @@ declare module 'styled-components' {
       };
     };
     spacings: {
+      xxxsmall: string;
       xxsmall: string;
       xsmall: string;
       small: string;

@@ -45,6 +45,7 @@ export default {
     },
   },
   spacings: {
+    xxxsmall: '0.3rem',
     xxsmall: '0.8rem',
     xsmall: '1.5rem',
     small: '2.5rem',
@@ -55,7 +56,7 @@ export default {
   },
   colors: {
     primary: '#BA75FF',
-    secondary: '#363449',
+    secondary: '#201F2B',
     mainBg: '#111116',
 
     text: rgba('#FFF', 0.87),

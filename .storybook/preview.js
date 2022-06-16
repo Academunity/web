@@ -18,6 +18,10 @@ export const parameters = {
         name: 'dark',
         value: theme.colors.mainBg,
       },
+      {
+        name: 'light',
+        value: '#FFF',
+      },
     ],
   },
 };

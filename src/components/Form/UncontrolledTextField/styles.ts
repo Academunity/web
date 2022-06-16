@@ -52,6 +52,11 @@ export const ControlWrapper = styled.div`
 
     &:focus-within {
       border-color: ${theme.colors.primary};
+
+      svg {
+        transition: color ${theme.transition.default};
+        color: ${theme.colors.primary};
+      }
     }
   `}
 `;
@@ -71,12 +76,23 @@ export const Control = styled.input<ControlProps>`
 
     border: 0;
     outline: none;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    textarea:-webkit-autofill {
+      -webkit-text-fill-color: ${theme.colors.text};
+      -webkit-box-shadow: 0 0 0px 1000px ${theme.colors.grayDarkest} inset;
+      transition: background-color 5000s ease-in-out 0s;
+      caret-color: ${theme.colors.white};
+    }
   `}
 `;
 
 export const Label = styled.label`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
+    line-height: 1;
     font-weight: ${theme.font.light};
     color: ${theme.colors.text};
     cursor: pointer;

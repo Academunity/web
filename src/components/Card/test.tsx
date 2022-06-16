@@ -8,7 +8,7 @@ describe('<Card />', () => {
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
-        background: #363449;
+        background: #201F2B;
         border-radius: 0.4rem;
       }
 

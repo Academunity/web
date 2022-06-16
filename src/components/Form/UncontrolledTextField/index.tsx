@@ -1,4 +1,6 @@
+import { Stack } from 'components/Stack';
 import { ControllerRenderProps, FieldValues } from 'react-hook-form';
+import { useTheme } from 'styled-components';
 import * as S from './styles';
 
 export type UncontrolledTextFieldProps = {
@@ -20,6 +22,8 @@ export function UncontrolledTextField({
   iconPosition = 'left',
   ...props
 }: UncontrolledTextFieldProps) {
+  const theme = useTheme();
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     field?.onChange(e.target.value);
     if (props.onChange) props.onChange(e);
@@ -27,22 +31,24 @@ export function UncontrolledTextField({
 
   return (
     <S.Wrapper disabled={disabled} error={!!error}>
-      {!!label && <S.Label htmlFor={name}>{label}</S.Label>}
+      <Stack spacing={theme.spacings.xxxsmall}>
+        {!!label && <S.Label htmlFor={name}>{label}</S.Label>}
 
-      <S.ControlWrapper>
-        {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
-        <S.Control
-          iconPosition={iconPosition}
-          disabled={disabled}
-          placeholder={placeholder ?? 'Type...'}
-          {...(label ? { id: name } : {})}
-          {...(field || {})}
-          {...props}
-          onChange={handleChange}
-        />
-      </S.ControlWrapper>
+        <S.ControlWrapper>
+          {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
+          <S.Control
+            iconPosition={iconPosition}
+            disabled={disabled}
+            placeholder={placeholder ?? 'Type...'}
+            {...(label ? { id: name } : {})}
+            {...(field || {})}
+            {...props}
+            onChange={handleChange}
+          />
+        </S.ControlWrapper>
 
-      {!!error && <S.Error>{error}</S.Error>}
+        {!!error && <S.Error>{error}</S.Error>}
+      </Stack>
     </S.Wrapper>
   );
 }
