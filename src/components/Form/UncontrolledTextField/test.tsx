@@ -2,7 +2,7 @@ import { Email } from 'styled-icons/material-outlined';
 import { render, screen } from 'utils/tests';
 
 import userEvent from '@testing-library/user-event';
-import { waitFor } from '@testing-library/react';
+import { fireEvent, waitFor } from '@testing-library/react';
 
 import { UncontrolledTextField } from '.';
 
@@ -55,6 +55,25 @@ describe('<UncontrolledTextField />', () => {
 
     userEvent.tab();
     expect(input).toHaveFocus();
+  });
+
+  it('changes its value when typing', async () => {
+    const onChange = jest.fn();
+    render(
+      <UncontrolledTextField
+        label="TextField"
+        name="TextField"
+        onChange={onChange}
+      />,
+    );
+
+    const input = screen.getByRole('textbox');
+    const text = 'This is my new text';
+    fireEvent.change(input, { target: { value: text } });
+
+    await waitFor(() => {
+      expect(input).toHaveValue(text);
+    });
   });
 
   it('does not change its value when disabled', async () => {
