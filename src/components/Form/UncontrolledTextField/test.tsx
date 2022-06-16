@@ -58,7 +58,20 @@ describe('<UncontrolledTextField />', () => {
   });
 
   it('changes its value when typing', async () => {
+    render(<UncontrolledTextField label="TextField" name="TextField" />);
+
+    const input = screen.getByRole('textbox');
+    const text = 'This is my new text';
+    fireEvent.change(input, { target: { value: text } });
+
+    await waitFor(() => {
+      expect(input).toHaveValue(text);
+    });
+  });
+
+  it("should call onChange method if it's not undefined", async () => {
     const onChange = jest.fn();
+
     render(
       <UncontrolledTextField
         label="TextField"
@@ -71,9 +84,7 @@ describe('<UncontrolledTextField />', () => {
     const text = 'This is my new text';
     fireEvent.change(input, { target: { value: text } });
 
-    await waitFor(() => {
-      expect(input).toHaveValue(text);
-    });
+    expect(onChange).toHaveBeenCalled();
   });
 
   it('does not change its value when disabled', async () => {
