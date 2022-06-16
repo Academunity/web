@@ -1,31 +1,17 @@
-import { Card } from 'components/Card';
-import { Stack } from 'components/Stack';
-import { useTheme } from 'styled-components';
 import * as S from './styles';
 import { Brand } from './components/Brand';
+import { Content } from './components/Content';
 
-type AuthProps = {
+export type AuthProps = {
   title: string;
   children: React.ReactNode;
 };
 
-export function Auth({ title, children }: AuthProps) {
-  const theme = useTheme();
-
+export function Auth(props: AuthProps) {
   return (
     <S.Container>
       <Brand />
-
-      <S.Content>
-        <Card>
-          <S.Form>
-            <Stack spacing={theme.spacings.small}>
-              <S.FormTitle>{title}</S.FormTitle>
-              {children}
-            </Stack>
-          </S.Form>
-        </Card>
-      </S.Content>
+      <Content {...props} />
     </S.Container>
   );
 }
