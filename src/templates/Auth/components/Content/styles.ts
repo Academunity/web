@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Card as GlobalCard } from 'components/Card';
 
-export const Container = styled.main`
+export const Wrapper = styled.main`
   flex: 1;
 
   display: flex;

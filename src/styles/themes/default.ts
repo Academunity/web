@@ -2,7 +2,7 @@ import { rgba } from 'polished';
 
 export default {
   grid: {
-    container: '130rem',
+    container: '120rem',
     gutter: '3.2rem',
   },
   border: {

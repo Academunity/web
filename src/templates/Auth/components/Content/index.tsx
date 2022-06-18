@@ -9,7 +9,7 @@ export function Content({ title, children }: ContentProps) {
   const theme = useTheme();
 
   return (
-    <S.Container>
+    <S.Wrapper>
       <S.Card>
         <S.Content>
           <Stack spacing={theme.spacings.small}>
@@ -18,6 +18,6 @@ export function Content({ title, children }: ContentProps) {
           </Stack>
         </S.Content>
       </S.Card>
-    </S.Container>
+    </S.Wrapper>
   );
 }

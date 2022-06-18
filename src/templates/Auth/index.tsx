@@ -9,9 +9,9 @@ export type AuthProps = {
 
 export function Auth(props: AuthProps) {
   return (
-    <S.Container>
+    <S.Wrapper>
       <Brand />
       <Content {...props} />
-    </S.Container>
+    </S.Wrapper>
   );
 }

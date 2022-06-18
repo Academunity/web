@@ -1,6 +1,6 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 
-export const Container = styled.menu`
+export const Wrapper = styled.menu`
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

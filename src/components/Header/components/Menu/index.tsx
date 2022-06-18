@@ -3,7 +3,7 @@ import * as S from './styles';
 
 export function Menu() {
   return (
-    <S.Container>
+    <S.Wrapper>
       <S.Nav>
         <Link href="/" passHref>
           <S.NavItem active>Aprender</S.NavItem>
@@ -21,6 +21,6 @@ export function Menu() {
           <S.NavItem>Fórum</S.NavItem>
         </Link>
       </S.Nav>
-    </S.Container>
+    </S.Wrapper>
   );
 }

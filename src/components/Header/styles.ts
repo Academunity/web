@@ -8,26 +8,35 @@ export const Wrapper = styled.header`
     background: ${theme.colors.secondary};
     color: ${theme.colors.text};
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 0 ${theme.spacings.huge};
+    padding: 0 ${theme.grid.gutter};
 
     border-top: 4px solid ${theme.colors.primary};
-
-    position: relative;
   `}
 `;
 
-export const Title = styled.h1`
+export const Content = styled.div`
+  height: 100%;
+  margin: 0 7.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+`;
+
+export const Title = styled.a`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xlarge};
-    font-weight: ${theme.font.bold};
+    text-decoration: none;
 
-    color: ${theme.colors.primary};
+    h1 {
+      font-size: ${theme.font.sizes.xlarge};
+      font-weight: ${theme.font.bold};
 
-    margin: 0;
+      color: ${theme.colors.primary};
+
+      margin: 0;
+    }
   `}
 `;
 

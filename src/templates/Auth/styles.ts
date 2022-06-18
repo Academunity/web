@@ -1,7 +1,7 @@
 import { rgba } from 'polished';
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
     height: 100%;
 
