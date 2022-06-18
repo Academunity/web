@@ -52,6 +52,7 @@ declare module 'styled-components' {
       large: string;
       xlarge: string;
       xxlarge: string;
+      huge: string;
     };
     colors: {
       primary: string;

@@ -53,6 +53,7 @@ export default {
     large: '4.0rem',
     xlarge: '4.5rem',
     xxlarge: '6.0rem',
+    huge: '7.5rem',
   },
   colors: {
     primary: '#BA75FF',

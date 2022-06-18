@@ -1,12 +1,17 @@
 import { Button } from 'components/Button';
 import { TextField } from 'components/Form/TextField';
 import { Stack } from 'components/Stack';
-import { FieldValues, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { useTheme } from 'styled-components';
 import { Email, Lock } from 'styled-icons/material-outlined';
 
+type FormSignInValues = {
+  email: string;
+  password: string;
+};
+
 export function FormSignIn() {
-  const { control } = useForm<FieldValues>();
+  const { control } = useForm<FormSignInValues>();
 
   const theme = useTheme();
 

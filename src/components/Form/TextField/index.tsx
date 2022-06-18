@@ -2,14 +2,10 @@ import {
   UncontrolledTextField,
   UncontrolledTextFieldProps,
 } from 'components/Form/UncontrolledTextField';
-import {
-  FieldValues,
-  useController,
-  UseControllerProps,
-} from 'react-hook-form';
+import { useController, UseControllerProps } from 'react-hook-form';
 
-type TextFieldProps = UncontrolledTextFieldProps &
-  UseControllerProps<FieldValues>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type TextFieldProps = UncontrolledTextFieldProps & UseControllerProps<any>;
 
 export function TextField({
   name,

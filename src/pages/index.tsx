@@ -1,14 +1,5 @@
-import { GetServerSideProps } from 'next';
+import { Header } from 'components/Header';
 
 export default function Home() {
-  return null;
+  return <Header />;
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  return {
-    redirect: {
-      destination: '/sign-in',
-      statusCode: 303,
-    },
-  };
-};
