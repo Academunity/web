@@ -11,12 +11,12 @@ export function Content({ title, children }: ContentProps) {
   return (
     <S.Container>
       <S.Card>
-        <S.Form>
+        <S.Content>
           <Stack spacing={theme.spacings.small}>
             <S.FormTitle>{title}</S.FormTitle>
             {children}
           </Stack>
-        </S.Form>
+        </S.Content>
       </S.Card>
     </S.Container>
   );

@@ -13,7 +13,7 @@ export const Card = styled(GlobalCard)`
   width: 50rem;
 `;
 
-export const Form = styled.form`
+export const Content = styled.div`
   ${({ theme }) => css`
     padding: ${theme.spacings.medium};
   `}
