@@ -1,5 +1,5 @@
 module.exports = (plop) => {
-  // controller generator
+  // component generator
   plop.setGenerator('component', {
     description: 'Create a component',
     prompts: [
@@ -29,6 +29,34 @@ module.exports = (plop) => {
         type: 'add',
         path: '../src/components/{{pascalCase name}}/test.tsx',
         templateFile: 'templates/component/test.tsx.hbs',
+      },
+    ],
+  });
+
+  plop.setGenerator('template', {
+    description: 'Create a template',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your template name?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/templates/{{pascalCase name}}/index.tsx',
+        templateFile: 'templates/template/index.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/templates/{{pascalCase name}}/styles.ts',
+        templateFile: 'templates/template/styles.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/templates/{{pascalCase name}}/test.tsx',
+        templateFile: 'templates/template/test.tsx.hbs',
       },
     ],
   });

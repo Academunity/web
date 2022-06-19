@@ -4,7 +4,7 @@ import { Header } from '.';
 
 jest.mock('components/Header/components/Menu', () => ({
   __esModule: true,
-  Menu: () => <div data-testId="menu" />,
+  Menu: () => <div data-testid="menu" />,
 }));
 
 describe('<Menu />', () => {

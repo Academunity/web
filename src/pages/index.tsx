@@ -1,5 +1,5 @@
-import { Header } from 'components/Header';
+import { Base } from 'templates/Base';
 
 export default function Home() {
-  return <Header />;
+  return <Base>This is the content</Base>;
 }
