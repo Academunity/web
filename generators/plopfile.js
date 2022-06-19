@@ -60,4 +60,37 @@ module.exports = (plop) => {
       },
     ],
   });
+
+  plop.setGenerator('screen', {
+    description: 'Create a screen',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your screen name?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/screens/{{pascalCase name}}/index.tsx',
+        templateFile: 'templates/screen/index.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/screens/{{pascalCase name}}/styles.ts',
+        templateFile: 'templates/screen/styles.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/screens/{{pascalCase name}}/stories.tsx',
+        templateFile: 'templates/screen/stories.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: '../src/screens/{{pascalCase name}}/test.tsx',
+        templateFile: 'templates/screen/test.tsx.hbs',
+      },
+    ],
+  });
 };

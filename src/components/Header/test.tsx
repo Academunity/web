@@ -2,7 +2,7 @@ import { render, screen } from 'utils/tests';
 
 import { Header } from '.';
 
-jest.mock('components/Header/components/Menu', () => ({
+jest.mock('./components/Menu', () => ({
   __esModule: true,
   Menu: () => <div data-testid="menu" />,
 }));

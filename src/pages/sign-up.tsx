@@ -1,4 +1,4 @@
-import { FormSignUp } from 'components/FormSignUp';
+import { FormSignUp } from 'screens/FormSignUp';
 import { Auth } from 'templates/Auth';
 
 export default function SignUp() {

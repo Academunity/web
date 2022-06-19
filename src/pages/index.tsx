@@ -1,5 +1,5 @@
-import { Base } from 'templates/Base';
+import { Home as HomeScreen } from 'screens/Home';
 
 export default function Home() {
-  return <Base>This is the content</Base>;
+  return <HomeScreen />;
 }
