@@ -4,7 +4,7 @@ import * as S from './styles';
 
 export function Navigator() {
   return (
-    <S.Navigator>
+    <S.Wrapper>
       <Link href="/tutorials" passHref>
         <S.NavItem>
           <ChevronLeft size={21} />
@@ -20,6 +20,6 @@ export function Navigator() {
           <ChevronRight size={21} />
         </S.NavItem>
       </Link>
-    </S.Navigator>
+    </S.Wrapper>
   );
 }

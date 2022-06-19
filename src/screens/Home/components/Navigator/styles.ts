@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Navigator = styled.nav`
+export const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
 `;
