@@ -36,6 +36,7 @@ export function UncontrolledTextField({
 
         <S.ControlWrapper>
           {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
+
           <S.Control
             iconPosition={iconPosition}
             disabled={disabled}
