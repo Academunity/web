@@ -33,6 +33,8 @@ export default {
     normal: 400,
     bold: 600,
     sizes: {
+      xxxsmall: '.8rem',
+      xxsmall: '1rem',
       xsmall: '1.2rem',
       small: '1.4rem',
       medium: '1.6rem',

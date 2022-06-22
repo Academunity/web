@@ -32,6 +32,8 @@ declare module 'styled-components' {
       normal: number;
       bold: number;
       sizes: {
+        xxxsmall: string;
+        xxsmall: string;
         xsmall: string;
         small: string;
         medium: string;

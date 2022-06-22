@@ -2,6 +2,7 @@ import { Container } from 'components/Container';
 import { Stack } from 'components/Stack';
 import { useTheme } from 'styled-components';
 import { Base } from 'templates/Base';
+import { LastQuestion } from './components/LastQuestion';
 import { Navigator } from './components/Navigator';
 import { Subjects } from './components/Subjects';
 
@@ -16,6 +17,11 @@ export function Home() {
         <Stack spacing={theme.spacings.small}>
           <Navigator />
           <Subjects items={subjectsMock} />
+
+          <Stack direction="row" spacing={theme.spacings.small}>
+            <LastQuestion />
+            {/* <SeeAllQuestions /> */}
+          </Stack>
         </Stack>
       </Container>
     </Base>
