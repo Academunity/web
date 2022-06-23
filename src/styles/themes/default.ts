@@ -76,7 +76,7 @@ export default {
 
     textBg: rgba('#3D4853', 0.6),
 
-    danger: '#FF6347',
+    danger: '#FF4747',
 
     white: '#FFF',
     black: '#000',
