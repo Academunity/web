@@ -7,12 +7,12 @@ export function LastQuestion() {
   const theme = useTheme();
 
   return (
-    <S.Wrapper as="a" href="/question/1">
+    <S.Wrapper as="a" href="/question/1" aria-label="Resume last question">
       <S.MainInfoWrapper>
         <BookmarkFill size={32} color={theme.colors.white} />
 
         <S.MainInfo>
-          <SmallText>Continue fazendo</SmallText>
+          <SmallText>Keep doing</SmallText>
           <S.Title>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna
             ex, dapibus in finibus quis...
