@@ -1,9 +1,13 @@
 import * as S from './styles';
 
-export function ColoredCircle() {
+export type ColoredCircleProps = {
+  color: string;
+};
+
+export function ColoredCircle({ color }: ColoredCircleProps) {
   return (
-    <S.Wrapper>
-      <h1>ColoredCircle</h1>
+    <S.Wrapper color={color}>
+      <S.Circle />
     </S.Wrapper>
   );
 }
