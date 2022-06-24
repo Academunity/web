@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeeAllQuestions /> should render correctly 1`] = `
+.c0 {
+  background: #201F2B;
+  border-radius: 0.4rem;
+  border: 2px solid #201F2B;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: border-color 0.1s ease-in-out,-webkit-transform 0.1s ease-in-out;
+  -webkit-transition: border-color 0.1s ease-in-out,transform 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out,transform 0.1s ease-in-out;
+}
+
+.c0:is(a):hover {
+  border-color: #BA75FF;
+  -webkit-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 4.0rem;
+}
+
+.c1 span {
+  color: rgba(255,255,255,0.87);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+<a
+  aria-label="View all"
+  class="c0 c1"
+  href="/questions"
+>
+  <span>
+    View all
+  </span>
+</a>
+`;

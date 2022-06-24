@@ -16,12 +16,13 @@ export function LastQuestion() {
         <BookmarkFill size={32} color={theme.colors.white} />
 
         <S.MainInfo>
-          <SmallText>Keep doing</SmallText>
+          <SmallText>Keep answering</SmallText>
 
           <Link href="/question/1" passHref>
             <S.Text
               as="a"
               aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna ex, dapibus in finibus quis..."
+              numberOfLines={1}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               urna ex, dapibus in finibus quis...

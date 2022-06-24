@@ -4,6 +4,7 @@ import { useTheme } from 'styled-components';
 import { Base } from 'templates/Base';
 import { LastQuestion } from './components/LastQuestion';
 import { Navigator } from './components/Navigator';
+import { SeeAllQuestions } from './components/SeeAllQuestions';
 import { Subjects } from './components/Subjects';
 
 import subjectsMock from './components/Subjects/mock';
@@ -20,7 +21,7 @@ export function Home() {
 
           <Stack direction="row" spacing={theme.spacings.small}>
             <LastQuestion />
-            {/* <SeeAllQuestions /> */}
+            <SeeAllQuestions />
           </Stack>
         </Stack>
       </Container>

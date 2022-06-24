@@ -6,7 +6,7 @@ describe('<LastQuestion />', () => {
   it('should render infos', () => {
     render(<LastQuestion />);
 
-    expect(screen.getByText('Keep doing')).toBeInTheDocument();
+    expect(screen.getByText('Keep answering')).toBeInTheDocument();
     expect(
       screen.getByText(
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna ex, dapibus in finibus quis...',
